@@ -34,9 +34,9 @@ of this.
  2. Create `karma.conf.js`, with commond `node_modules/.bin/karma init`, (`node_modules` folder was generated as soon as `karma` was installed)
   * open `karma.conf.js`, add the test/ tobe tested file reference to `list of files/ patterns to load in the browser`, such as `‘js/*.js’, ‘tests/*.js’
 `, karma will read these files during testing
- 3. Open `Edit Configurations` window, add `+` a new karma debug/ run configuration, name it as `Karma Testing`, add the path of `karma.conf.js` to `Configuration file`, apply&save it
-3. Create tests folder and save your test files in `tests` folder
-4. `Run 'Karma Testing'`, there should 9 tests be passed 
+ 3. Open `Edit Configurations` window, add `+` a new karma debug/ run configuration, name it as `Karma Testing`, add the path of `karma.conf.js` to `Configuration file`, apply&ok
+3. Create test folder and save your test files in `test` folder (you don't need to create `tests.js`, just go to next step)
+4. `Run 'Karma Testing'`, there should 9 tests (18 assertions) be passed 
 
 ## Contributing
 1. Fork it!
