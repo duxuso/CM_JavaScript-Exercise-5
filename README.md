@@ -35,7 +35,7 @@ of this.
   * open `karma.conf.js`, add the test/ tobe tested file reference to `list of files/ patterns to load in the browser`, such as `‘js/*.js’, ‘tests/*.js’
 `, karma will read these files during testing
  3. Open `Edit Configurations` window, add `+` a new karma debug/ run configuration, name it as `Karma Testing`, add the path of `karma.conf.js` to `Configuration file`, apply&save it
-3. Create tests folder and save your test files in that folder
+3. Create tests folder and save your test files in `tests` folder
 4. `Run 'Karma Testing'`, there should 9 tests be passed 
 
 ## Contributing
@@ -45,14 +45,6 @@ of this.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-TODO: Write history
-
-## Credits
-TODO: Write credits
-
-## License
-TODO: Write license
 </content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
