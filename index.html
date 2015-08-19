@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript" src="js/startsWith.js"></script>
+        <script type="text/javascript" src="js/endsWith.js"></script>
+        <script type="text/javascript" src="js/stripHTML.js"></script>
+    </head>
+    <body>
+        <table cellpadding="0" cellspacing="0" align="center" bgcolor="#f0fff0">
+            <tr><td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;border: solid #808080 2px;">
+                <table cellpadding="0" cellspacing="0" width="800px" border="1">
+            <thead>
+                <tr>
+                    <td align="center" valign="top" colspan="3" style="font-family: Helvetica, Arial, sans-serif;"><h2>Javascript Requirements</h2></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="left" valign="top" height="40px" style="font-family: Helvetica, Arial, sans-serif;" colspan="3" bgcolor="#87cefa"><b>Requirement 5</b> Extend all String objects with the following methods: startsWith(string) ­ This should take a single argument and return true if the provided string is a prefix of this.</td>
+                </tr>
+                <tr><th width="300px">this</th><th width="250px">Sample Inputs</th><th width="250px">Sample Outputs</th></tr>
+                <tr>
+                    <td align="center" valign="middle" style="font-size: 12px;" rowspan="8">hang the dj</td>
+                    <td align="center" valign="top" style="font-size: 12px;">"hang"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">true</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">"Hang"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">"I've got a room for rent"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">""</td>
+                    <td align="center" valign="top" style="font-size: 12px;">true</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">"hang the"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">true</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">42</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">{first:"Johnny"}</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="middle" height="40px" style="font-family: Helvetica, Arial, sans-serif;">
+                        <input type ="text" name="prefix" value="Sample Inputs" id="pf" style="width: 200px;"/>
+                    </td>
+                    <td align="center" valign="middle" height="40px" style="font-family: Helvetica, Arial, sans-serif;">
+                        <input type="button" name="button" value="Test prefix" onclick="printpf()"/>
+                        <input type ="text" name="result" value="" id="pfrs" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" height="40px" style="font-family: Helvetica, Arial, sans-serif;" colspan="3" bgcolor="#87cefa">endsWith(string) ­ This should take a single argument and return true if the provided string is a suffix of this.</td>
+                </tr>
+                <tr><th>this</th><th>Sample Inputs</th><th>Sample Outputs</th></tr>
+                <tr>
+                    <td align="center" valign="middle" style="font-size: 12px;" rowspan="7">hang the dj</td>
+                    <td align="center" valign="top" style="font-size: 12px;">"dj"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">true</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">"panic on the streets"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">""</td>
+                    <td align="center" valign="top" style="font-size: 12px;">true</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">"the dj"</td>
+                    <td align="center" valign="top" style="font-size: 12px;">true</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">42</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">{first:"Johnny"}</td>
+                    <td align="center" valign="top" style="font-size: 12px;">false</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="middle" height="40px" style="font-family: Helvetica, Arial, sans-serif;">
+                        <input type ="text" name="suffix" value="Sample Inputs" id="sf" style="width: 200px;"/>
+                    </td>
+                    <td align="center" valign="middle" height="40px" style="font-family: Helvetica, Arial, sans-serif;">
+                        <input type="button" name="button" value="Test suffix" onclick="printsf()"/> <input type ="text" name="result" value="" id="sfrs" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" height="40px" style="font-family: Helvetica, Arial, sans-serif;" colspan="3"  bgcolor="#87cefa"><b>Requirement 6</b> Extend all String objects with the following method: stripHtml() ­ This method should remove all html/xml tags from this.</td>
+                </tr>
+                <tr><th>this</th><th colspan="2">Sample Outputs</th></tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">&lt;p&gt;Shoplifters of the World &lt;em&gt;Unite&lt;/em&gt;!&lt;/p&gt;</td>
+                    <td align="center" valign="top" style="font-size: 12px;" colspan="2">Shoplifters of the World Unite!</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="font-size: 12px;">1 &amp;lt; 2</td>
+                    <td align="center" valign="top" style="font-size: 12px;" colspan="2">1 &amp;lt; 2</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="middle" height="40px" style="font-size: 12px;">
+                        <input type="text" name="input" value="Sample inputs" id="input" style="width:280px;" />
+                    </td>
+                    <td align="center" valign="middle" height="40px" style="font-size: 12px;" colspan="2">
+                        <input type="button" name="button" value="HTML strip" onclick="print()"/>
+                        <input type="text" name="output" value="" id="output" style="width: 200px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            </td></tr></table>
+    </body>
+</html>
