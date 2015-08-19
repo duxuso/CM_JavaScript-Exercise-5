@@ -25,7 +25,7 @@ of this.
 1. Dowload this 'ZIP' source code, extract the ZIP file to your local trusted path
 2. Open your WebStorm 9
 3. Open project: 'FILE -> OPEN -> *path to project* '
-4. Start to run
+4. **Start to run** -> Open `index.html` with FireFox/Chrome/Safari/Opera
 
 ## Test
 1. Before test, it needs to install `karma` and `karma-cli` packages if you've already installed `node.js`, if not, you'd better install `node.js` and `npm` package firstly, and here is a useful tutorial with good samples [Getting Started with Testing JavaScript in WebStorm](https://www.youtube.com/watch?v=QQSySPpzmPI)
